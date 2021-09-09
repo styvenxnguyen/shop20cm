@@ -213,7 +213,8 @@ html{
     padding: 12px 0;
     cursor: pointer;
     margin: 0;
-    display: none;   
+    display: none;  
+    z-index: 1; 
 }
 
 
@@ -240,6 +241,46 @@ html{
 .product-freeship__img{
     width: 145px;
 }
+
+/* pagination */
+
+.home-pagination-wrap{
+    margin: 50px 0 50px 0;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item{
+    padding: 0 12px;
+}
+
+.pagination-item--active .pagination-item-link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item-link:hover{
+    background-color: #e95c40;
+}
+
+.pagination-item-link{
+    display: block;
+    --height: 30px;
+    font-size: 2rem;
+    color: #939393;
+    text-decoration: none;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+}
+
+
 
 
     
